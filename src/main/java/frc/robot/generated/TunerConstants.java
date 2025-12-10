@@ -74,7 +74,7 @@ public class TunerConstants {
 
     // Theoretical free speed (m/s) at 12 V applied output;
     // This needs to be tuned to your individual robot
-    public static final LinearVelocity kSpeedAt12Volts = MetersPerSecond.of(5.41);
+    public static final LinearVelocity kSpeedAt12Volts = MetersPerSecond.of(1.5);
 
     // Every 1 rotation of the azimuth results in kCoupleRatio drive motor turns;
     // This may need to be tuned to your individual robot
@@ -124,7 +124,7 @@ public class TunerConstants {
             .withSteerFrictionVoltage(kSteerFrictionVoltage)
             .withDriveFrictionVoltage(kDriveFrictionVoltage);
 
-
+//Values for each swerve modules is established here. You can also see the cancoder values generated from pheonix tuner.
     // Front Left
     private static final int kFrontLeftDriveMotorId = 1;
     private static final int kFrontLeftSteerMotorId = 2;
