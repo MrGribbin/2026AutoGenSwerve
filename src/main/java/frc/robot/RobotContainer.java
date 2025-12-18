@@ -40,6 +40,8 @@ public class RobotContainer {
     public final CommandSwerveDrivetrain drivetrain = TunerConstants.createDrivetrain();
 
     public RobotContainer() {
+        NamedCommands.registerCommand("testNamedCommand", Commands.runOnce(() -> System.out.println("this named command works")));
+
         configureBindings();
     }
 
